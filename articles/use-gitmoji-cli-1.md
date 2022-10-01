@@ -3,7 +3,7 @@ title: "[gitmoji-cli] コミットメッセージで簡単に絵文字を使う�
 emoji: "✨"
 type: "tech"
 topics: ["Git", "GitHub", "gitmoji"]
-published: false
+published: true
 ---
 
 ## 概要
