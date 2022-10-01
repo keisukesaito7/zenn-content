@@ -3,14 +3,13 @@ title: "[GCP Datastream] AWS RDS から BigQuery へのレプリケーション�
 emoji: "📝"
 type: "tech"
 topics: ["GCP", "BigQuery", "datastream", "AWS", "RDS"]
-published: false
+published: true
 ---
 
 ## 概要
 
 PostgreSQL や MySQL などの運用データベースから、GCP のデータウェアハウスである BigQuery に、直接かんたんにデータをレプリケートできる [Datastream for BigQuery](https://cloud.google.com/datastream-for-bigquery) のプレビュー版が提供されました。
-BigQuery のスキーマ定義、BigQuery に適した形へのデータ変換、データを BigQuery に送信する日バッチ処理などが不要になることが期待されたので、試してみました。
-
+BigQuery のスキーマ定義、BigQuery に適したデータ型への変換、データを BigQuery に送信するバッチ処理などが不要になることが期待されたので、試してみました。
 ## 構成
 
 本記事では以下の構成で GCP Datastream for BigQuery を試しました。
