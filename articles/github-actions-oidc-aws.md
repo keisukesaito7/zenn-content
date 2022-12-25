@@ -3,7 +3,7 @@ title: "[GitHub OIDC] OIDC を使って GitHub Actions から AWS にアクセ�
 emoji: "🔒"
 type: "tech"
 topics: ["GitHubActions", "GitHub", "AWS", "OIDC"]
-published: false
+published: true
 ---
 
 ## 概要
@@ -29,7 +29,7 @@ GitHub Actions のワークフローで AWS リソースにアクセスする際
 - AWS
   - IAM
   - S3
-- Open ID Connect (OIDC)
+- OpenID Connect (OIDC)
 - GitHub Actions
 
 とはいえ、よくわからなくても見れば使えるように書いていきますので、駆け出しエンジニアの方などもぜひご参考ください！
