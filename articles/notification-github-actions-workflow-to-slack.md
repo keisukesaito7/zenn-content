@@ -93,8 +93,8 @@ workflows:{event:"pull_request","push" branch:"main"}
 ```
 例に上げた書き方だと、以下の条件が通知の対象となります。
 
-- pull request を作成したとき
-- main ブランチにコミットが push されたとき
+- main ブランチに向けた PR で実行されるワークフロー
+- main ブランチにコミットが push されたときに実行されるワークフロー
 
 ### 通知を試す
 
@@ -105,6 +105,8 @@ main ブランチに向けた PR を作成し、ワークフローを実行し�
 
 このブランチを main にマージします。
 こちらも同じく通知が来ました！
+
+![](/images/notification-github-actions-workflow-to-slack/notification-test-merge-to-main.png)
 
 ## フィルタリング
 
@@ -119,7 +121,7 @@ https://github.com/integrations/slack#workflow-notification-filters
 
 ### ブランチのフィルタリング
 
-今回は main ブランチに向けた PR を subscribe してるので、例えば develop ブランチに向けた PR で実行された workflow は通知対象外です。
+今回は main ブランチに向けた PR を subscribe してるので、例えば develop ブランチに向けた PR で実行されたワークフローは通知対象外です。
 
 それを確かめてみます。
 まずワークフローが、develop に向けた PR でも実行されるように変更します。
@@ -153,7 +155,4 @@ workflows:{event:"pull_request","push" branch:"main","develop"}
 
 ## おわりに
 
-最近、秘匿情報を発行しなくて良い方向に倒すことに喜びを感じられています。
-今回も WEBHOOK_URL を発行せずとも連携ができる手法を勉強できました。
-
-また何か情報が入ったら試してみます。
+手間も情報漏えいリスクも軽減されたので、これからはこちらのやり方で Slack 連携していきたいと思いました。
